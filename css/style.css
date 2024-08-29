@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 15px;
+    position: relative;
+    height: 100%;
+}
+
+.pokedex {
+    width: 100%;
+    max-height: 500px;
+}
+
+.background {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-59%, 30%);
+    height: 24%;
+    image-rendering: pixelated;
+    width: 52%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    image-rendering: pixelated;
+}
+
+.pokemon_img {
+    position: absolute;
+    display: none;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+    image-rendering: pixelated;
+    max-width: 40%;
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54%;
+    right: 29%;
+    height: 24px;
+    font-size: clamp(8px, 5vw + 1rem, 100%);
+    max-width: 53%;
+}
+
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888,-5px 6px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -2px 3px 1px #8d062a;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+.playSoundBtn {
+    display: flex;
+    position: absolute;
+    bottom: 80%;
+    left: 65%;
+    width: 13%;
+    padding: 12px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #e4e4e4;
+    color: #3a444d;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: -1px 2px 1px #8d062a;
+    text-align: center;
+    justify-content: center;
+}
+
+.playSoundBtn:active {
+    box-shadow: inset -2px 2px 0 #777;
+    font-size: 0.9rem;
+}
