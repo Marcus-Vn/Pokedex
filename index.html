@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="./favicons/pokeball.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script defer src="./js/script.js"></script>
+
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="left">
+                <button class="playSoundBtn">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+    
+                <img src="./images/pokemon_background.jpg" alt="background" class="background">
+    
+                <img src="#" alt="pokemon" class="pokemon_img">
+        
+                <h1 class="pokemon_data">
+                    <span class="pokemon_number"></span> -
+                    <span class="pokemon_name"></span>
+                </h1>
+        
+                <form class="form">
+                    <input type="search" class="input_search" placeholder="Name or Number" required/>
+                </form>
+        
+                <div class="buttons">
+                    <button class="button btn-prev">&lt; Prev</button>
+                    <button class="button btn-next">Next &gt;</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="type_screen">
+                    Type
+                    <div class="pokemon_type"></div>
+                </div>
+                <div class="stat_screen">
+                    <div class="stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img src="./images/pokedex.svg" alt="pokedex" class="pokedex">
+    </main>
+</body>
+</html>
