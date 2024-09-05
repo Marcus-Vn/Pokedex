@@ -13,6 +13,27 @@ const buttonNext = document.querySelector(".btn-next");
 // Seleciona o botão pelo ID
 const playSoundBtn = document.querySelector('.playSoundBtn');
 
+document.addEventListener("DOMContentLoaded", function() {
+    const pokedexImage = document.querySelector('.pokedex');
+    const container = document.querySelector('.container');
+
+    // Função para ajustar o container ao tamanho da pokedex
+    function adjustContainerSize() {
+        const pokedexWidth = pokedexImage.clientWidth;
+        const pokedexHeight = pokedexImage.clientHeight;
+
+        // Aplicar as dimensões da pokedex ao container
+        container.style.width = `${pokedexWidth}px`;
+        container.style.height = `${pokedexHeight}px`;
+    }
+
+    // Ajustar quando a imagem carregar
+    pokedexImage.addEventListener('load', adjustContainerSize);
+
+    // Ajustar ao redimensionar a janela
+    window.addEventListener('resize', adjustContainerSize);
+});
+
 let searchPokemon = 1;
 let audioUrl = "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg";
 
