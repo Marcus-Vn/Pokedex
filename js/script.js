@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Ajustar quando a imagem carregar
-    window.addEventListener('load', adjustContainerSize);
+    pokedexImage.addEventListener('load', adjustContainerSize);
 
     // Ajustar ao redimensionar a janela
     window.addEventListener('resize', adjustContainerSize);
