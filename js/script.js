@@ -27,9 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
         container.style.height = `${pokedexHeight}px`;
     }
 
-    // Ajustar quando a imagem carregar
-    pokedexImage.addEventListener('load', adjustContainerSize);
-
     // Ajustar ao redimensionar a janela
     window.addEventListener('resize', adjustContainerSize);
 });
